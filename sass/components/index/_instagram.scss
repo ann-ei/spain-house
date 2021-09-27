@@ -1,0 +1,69 @@
+.instagram {
+    padding: 20px 0 20px 0;
+}
+.instagram__icon {
+    display: block;
+    margin: 0 auto 17px auto;
+
+}
+.instagram__item {
+    width: 378px;
+}
+.instagram__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+.instagram__item {
+    flex-basis: calc(100% / 3 - 50px);
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.instagram__title {
+    font-family: Playfair Display SC;
+font-weight: 400;
+font-size: 35px;
+line-height: 1.3;
+text-transform: uppercase;
+text-align: center;
+color: #808080;
+margin-bottom: 16px;
+}
+.instagram__link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-weight: normal;
+font-size: 18px;
+line-height: 1.4;
+
+color: #000000;
+}
+.instagram__btn {
+    font-family: Playfair Display SC;
+font-weight: 700;
+font-size: 18px;
+line-height: 1.6;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+padding: 14px 22px;
+
+color: #FFFFFF;
+background: #808080;
+
+display: block;
+margin: 73px auto 0 auto;
+
+&::after {
+    content: '';
+    display: block;
+    width: 1236px;
+    height: 2px;
+    background-color: #808080;
+    position: absolute;
+    bottom: -35px;
+    left: 16px;
+}
+
+}
