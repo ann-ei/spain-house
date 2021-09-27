@@ -424,8 +424,8 @@ button {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.5)), to(rgba(128, 128, 128, 0.5))), url(../../../img/hero-bg.jpg);
-  background-image: linear-gradient(rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5)), url(../../../img/hero-bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.5)), to(rgba(128, 128, 128, 0.5))), url(../img/hero-bg.jpg);
+  background-image: linear-gradient(rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5)), url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
   padding: 256px 0 437px 0;
   background-size: cover;
@@ -500,7 +500,7 @@ button {
 .about__img::after {
   content: '';
   display: block;
-  background-image: url(../../../img/about-bg.png);
+  background-image: url(../img/about-bg.png);
   position: absolute;
   width: 492px;
   height: 387px;
@@ -612,7 +612,7 @@ button {
 .founder__img::after {
   content: '';
   display: block;
-  background-image: url(../../../img/about-bg.png);
+  background-image: url(../img/about-bg.png);
   position: absolute;
   width: 492px;
   height: 387px;
