@@ -1,10 +1,16 @@
 .about {
     padding-top: 145px;
     padding-bottom: 45px;
+    @media screen and(max-width:767px) {
+        padding-top: 35px;
+    }
 }
 .about-container {
     display: flex;
     justify-content: space-between;
+    @media screen and(max-width:767px) {
+        display: block;
+    }
 }
 .about__title {
     font-family: Playfair Display SC;
@@ -15,6 +21,9 @@ text-transform: uppercase;
 
 color: #808080;
 margin-bottom: 32px;
+@media screen and(max-width:767px) {
+    text-align: center;
+}
 }
 .about__text {
     font-weight: normal;
@@ -27,6 +36,9 @@ margin-bottom: 24px;
     max-width: 400px;
     margin-right: 20px;
 }
+@media screen and(max-width:767px) {
+    text-align: center;
+}
 
 }
 .about__subtitle {
@@ -37,12 +49,22 @@ line-height: 1.6;
 text-transform: uppercase;
 
 color: #808080;
+
+
+@media screen and(max-width:767px) {
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+}
 }
 .about__img {
     width: 367px;
     height: 499px;
     z-index: 999;
     position: relative;
+    @media screen and (max-width:767px) {
+        display: none;
+    }
     &::after {
         content: '';
         display: block;
@@ -57,5 +79,18 @@ color: #808080;
         @media screen and (max-width:1279px) {
             display: none;
         }
+    }
+}
+.about__img--desktop {
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+}
+.about__img--mobile__wrap {
+    position: relative;
+}
+.about__img--mobile {
+    @media screen and(min-width:768px) {
+        display: none;
     }
 }

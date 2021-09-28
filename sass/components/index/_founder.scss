@@ -8,6 +8,9 @@
     @media screen and (max-width:1279px) {
         padding-top: 35px;
     }
+    @media screen and (max-width:767px) {
+        display: block;
+    }
 }
 .founder__img {
     width: 367px;
@@ -17,6 +20,13 @@
     @media screen and (max-width:1279px) {
         margin-right: 20px;
         height: auto;
+    }
+    @media screen and (max-width:767px) {
+        max-width: 283px;
+        max-height: 454px;
+        display: block;
+        margin: 0 auto 53px auto;
+        
     }
     &::after {
         content: '';
@@ -34,6 +44,16 @@
     }
 
 }
+.founder__img--desktop {
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+}
+.founder__img--mobile {
+    @media screen and(min-width:768px) {
+        display: none;
+    }
+}
 .founder__content {
     margin-top: 144px;
     @media screen and (max-width:1279px) {
@@ -49,6 +69,9 @@ text-transform: uppercase;
 
 color: #808080;
 margin-bottom: 23px;
+@media screen and (max-width:767px) {
+    display: none;
+}
 }
 .founder__subtitle {
 font-weight: 400;
@@ -58,8 +81,13 @@ text-transform: uppercase;
 margin-bottom: 23px;
 
 color: #000000;
+
 span {
     font-weight: 700;
+}
+@media screen and (max-width:767px) {
+    text-align: center;
+    display: block;
 }
 }
 .founder__text {
@@ -70,6 +98,10 @@ line-height: 1.8;
 color: #000000;
 max-width: 664px;
 margin-bottom: 28px;
+@media screen and (max-width:767px) {
+    text-align: center;
+    display: block;
+}
 }
 .founder__lang {
     font-weight: 400;
@@ -79,6 +111,11 @@ line-height: 1.8;
 text-transform: uppercase;
 
 color: #808080;
+@media screen and (max-width:767px) {
+    text-align: center;
+    display: block;
+    margin-bottom: 33px;
+}
 
 }
 .founder__btn {
@@ -97,6 +134,12 @@ margin-top: 27px;
 
 color: #808080;
 transition: 250ms all linear;
+
+@media screen and (max-width:767px) {
+    
+    display: block;
+    margin: 0 auto;
+}
 &:hover {
     color: #fff;
     background: #808080;
