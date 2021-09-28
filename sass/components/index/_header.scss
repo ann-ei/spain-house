@@ -17,6 +17,9 @@
 .header__phone-list {
     display: flex;
     align-items: center;
+    @media screen and (max-width:1279px) {
+        display: none;
+    }
 }
 .header__phone-item {
     display: flex;
@@ -45,6 +48,12 @@
     color: #808080;
     background: transparent;
     border: 1px solid #fff;
+    transition: 250ms all linear;
+
+    &:hover {
+        transform: scale(1.1);
+        border: 1px solid #808080;
+    }
 }
 .header__language-btn--active {
     border: 1px solid #808080;

@@ -17,6 +17,12 @@
     margin-bottom: 23px;
     svg {
         margin-right: 22px;
+
+        transition: 250ms all linear;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 .footer__copyright {

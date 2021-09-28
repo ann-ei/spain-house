@@ -1,0 +1,137 @@
+.recommend__title {
+    font-family: Playfair Display SC;
+font-weight: 400;
+font-size: 35px;
+line-height: 1.3;
+text-transform: uppercase;
+text-align: center;
+margin-bottom: 24px;
+
+color: #808080;
+
+}
+.recommend__text {
+    font-weight: normal;
+font-size: 16px;
+line-height: 2;
+margin: 0 auto 27px auto;
+max-width: 530px;
+
+
+color: #000000;
+
+}
+.recommend__wrap {
+    display: flex;
+}
+.recommend__item--big {
+    background: #fff;
+    display: inline-block;
+    box-shadow: (0px 5px 18px rgba(0, 0, 0, 0.3));
+    margin-right: 30px;
+    @media screen and(max-width:1279px) {
+        display: none;
+    }
+    
+}
+
+
+.recommend__item--big__content {
+    margin: 10px;
+    border: 1px solid #808080;
+    padding: 10px 28px;
+}
+.recommend__number {
+font-weight: 400;
+font-size: 12px;
+line-height: 2.3;
+text-align: center;
+
+color: #606060;
+}
+.recommend__subtitle {
+    font-family: Playfair Display SC;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+
+    margin-bottom: 11px;
+    
+    color: #606060;
+}
+.recommend__cost{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+    display: block;
+    margin-bottom: 13px;
+    margin-right: 5px;
+    
+    color: #000000;
+}
+.recommend__about-wrap {
+    display: flex;
+    justify-content: center;
+}
+.recommend__square {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    
+    color: #606060;
+}
+.recommend__bedrooms {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    margin-left: 36px;
+    
+    color: #606060;
+}
+.recommend__terrace {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    display: block;
+    
+    color: #606060;
+}
+
+.recommend__items--middle {
+background: #fff;
+    display: flow-root;
+    box-shadow: (0px 5px 18px rgba(0, 0, 0, 0.3));
+    margin-bottom: 26px;
+}
+.recommend__items--little {
+    background: #fff;
+    display: inline-block;
+    box-shadow: (0px 5px 18px rgba(0, 0, 0, 0.3));
+    margin-right: 16px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.recommend__items--little__desktop {
+    @media screen and(max-width:1279px) {
+        display: none;
+    }
+}
+.recommend__items--little__mobile {
+    @media screen and(min-width:1280px) {
+        display: none;
+    }
+}
+.div__wrap {
+    @media screen and (max-width:1279px) {
+        display: flex;
+    }
+}

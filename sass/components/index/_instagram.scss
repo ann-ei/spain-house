@@ -1,5 +1,5 @@
 .instagram {
-    padding: 20px 0 20px 0;
+    padding: 74px 0 20px 0;
 }
 .instagram__icon {
     display: block;
@@ -51,9 +51,12 @@ padding: 14px 22px;
 
 color: #FFFFFF;
 background: #808080;
+border: 2px solid #808080;
 
 display: block;
 margin: 73px auto 0 auto;
+
+transition: 250ms all linear;
 
 &::after {
     content: '';
@@ -64,6 +67,13 @@ margin: 73px auto 0 auto;
     position: absolute;
     bottom: -35px;
     left: 16px;
+    @media screen and (max-width:1279px) {
+        width: 725px;
+    }
+}
+&:hover {
+    background: transparent;
+    color: #808080;
 }
 
 }

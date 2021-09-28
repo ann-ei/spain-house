@@ -4,12 +4,20 @@
 .founder-container {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width:1279px) {
+        padding-top: 35px;
+    }
 }
 .founder__img {
     width: 367px;
     height: 499px;
     z-index: 999;
     position: relative;
+    @media screen and (max-width:1279px) {
+        margin-right: 20px;
+        height: auto;
+    }
     &::after {
         content: '';
         display: block;
@@ -20,11 +28,17 @@
         top: 43px;
     right: -56px;
         z-index: -100;
+        @media screen and (max-width:1279px) {
+            display: none;
+        }
     }
 
 }
 .founder__content {
     margin-top: 144px;
+    @media screen and (max-width:1279px) {
+        margin-top: 0;
+    }
 }
 .founder__title {
     font-family: Playfair Display SC;
@@ -82,4 +96,9 @@ border: 2px solid #808080;
 margin-top: 27px;
 
 color: #808080;
+transition: 250ms all linear;
+&:hover {
+    color: #fff;
+    background: #808080;
+}
 }

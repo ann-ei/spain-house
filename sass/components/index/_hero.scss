@@ -3,6 +3,10 @@
     background-repeat: no-repeat;
     padding: 256px 0 437px 0;
     background-size: cover;
+    @media screen and(max-width:1279px) {
+        padding: 131px 0 199px 0;
+        ;
+    }
 }
 .hero__title {
     font-family: Playfair Display SC;
