@@ -1,0 +1,16 @@
+.new-builds__hero {
+  background-image: linear-gradient(
+      rgba(128, 128, 128, 0.5),
+      rgba(128, 128, 128, 0.5)
+    ),
+    url(../img/new-builds/new-builds--bg.png);
+  background-repeat: no-repeat;
+  padding: 256px 0 437px 0;
+  background-size: cover;
+  @media screen and(max-width:1279px) {
+    padding: 131px 0 199px 0;
+  }
+  @media screen and(max-width:767px) {
+    padding: 267px 0 359px 0;
+  }
+}

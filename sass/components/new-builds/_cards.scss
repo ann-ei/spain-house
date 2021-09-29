@@ -1,0 +1,36 @@
+.new-builds__img {
+  box-shadow: (0px 4px 15px rgba(0, 0, 0, 0.3));
+}
+.new-builds__cards {
+  padding: 85px 0 110px 0;
+}
+.new-builds__card-title {
+  font-family: Playfair Display SC;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: #606060;
+  margin: 10px;
+  border: 1px solid #808080;
+  padding: 10px 28px;
+}
+.new-builds__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -46px;
+  margin-top: -46px;
+}
+.new-builds__item {
+  flex-basis: calc(100% / 3 - 46px);
+  margin-left: 46px;
+  margin-top: 46px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 1279px) {
+    flex-basis: calc(100% / 2 - 46px);
+  }
+  @media screen and (max-width: 767px) {
+    flex-basis: calc(100% / 1 - 46px);
+  }
+}
