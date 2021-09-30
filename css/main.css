@@ -741,7 +741,6 @@ body .invisible-heading {
 
 .about__img {
   width: 367px;
-  height: 499px;
   z-index: 999;
   position: relative;
 }
@@ -1510,7 +1509,8 @@ body .invisible-heading {
 
 @media screen and (max-width: 1279px) {
   .contacts__hero {
-    padding: 131px 0 199px 0;
+    padding: 131px 0 25px 0;
+    background-position-x: right;
   }
 }
 
@@ -1626,6 +1626,12 @@ body .invisible-heading {
   padding-top: 100px;
 }
 
+@media screen and (max-width: 1279px) {
+  .contacts__about-content {
+    padding-top: 0;
+  }
+}
+
 .contacts__about-text {
   font-weight: 400;
   font-size: 16px;
@@ -1637,6 +1643,15 @@ body .invisible-heading {
 
 .contacts__about-text:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .contacts__about-text {
+    padding-top: 0;
+    max-width: 560px;
+    margin-right: 20px;
+    font-size: 15px;
+  }
 }
 
 .contacts-help {
@@ -1687,6 +1702,38 @@ body .invisible-heading {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1279px) {
+  .contacts__phone-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.contacts__phone-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 35px;
+}
+
+.contacts__phone-item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .contacts__phone-item {
+    margin-right: 0;
+  }
+}
+
 .contacts__phone-link {
   font-weight: 400;
   font-size: 16px;
@@ -1699,6 +1746,24 @@ body .invisible-heading {
           align-items: center;
   color: #808080;
   margin: 0 6px;
+}
+
+@media screen and (max-width: 1279px) {
+  .contacts__phone-icon--tel {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .contacts__phone-icon--desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts__phone-icon--mobile {
+    display: none;
+  }
 }
 
 .contacts__input {

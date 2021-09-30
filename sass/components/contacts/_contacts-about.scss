@@ -7,6 +7,9 @@
 }
 .contacts__about-content {
   padding-top: 100px;
+  @media screen and(max-width:1279px) {
+    padding-top: 0;
+  }
 }
 .contacts__about-text {
   font-weight: 400;
@@ -18,5 +21,11 @@
   margin-bottom: 30px;
   &:last-child {
     margin-bottom: 0;
+  }
+  @media screen and(max-width:1279px) {
+    padding-top: 0;
+    max-width: 560px;
+    margin-right: 20px;
+    font-size: 15px;
   }
 }

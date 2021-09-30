@@ -9,7 +9,8 @@
   padding: 144px 0 25px 0;
   background-size: cover;
   @media screen and(max-width:1279px) {
-    padding: 131px 0 199px 0;
+    padding: 131px 0 25px 0;
+    background-position-x: right;
   }
   @media screen and(max-width:767px) {
     padding: 267px 0 359px 0;
@@ -44,6 +45,7 @@
   margin-bottom: 5px;
 
   color: rgba(255, 255, 255, 0.8);
+  
   @media screen and(max-width:767px) {
     font-size: 12px;
     line-height: 2.5;

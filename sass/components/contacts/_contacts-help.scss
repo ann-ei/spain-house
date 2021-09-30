@@ -36,6 +36,21 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  @media screen and(max-width:1279px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.contacts__phone-item {
+  display: flex;
+  align-items: center;
+  margin-right: 35px;
+  &:last-child {
+    margin-right: 0;
+  }
+  @media screen and(max-width:1279px) {
+    margin-right: 0;
+  }
 }
 .contacts__phone-link {
   font-weight: 400;
@@ -45,6 +60,21 @@
   align-items: center;
   color: #808080;
   margin: 0 6px;
+}
+.contacts__phone-icon--tel {
+  @media screen and(max-width:1279px) {
+    display: none;
+  }
+}
+.contacts__phone-icon--desktop {
+  @media screen and(max-width:1279px) {
+    display: none;
+  }
+}
+.contacts__phone-icon--mobile {
+  @media screen and(min-width:1280px) {
+    display: none;
+  }
 }
 .contacts__input {
   font-family: Open Sans;
