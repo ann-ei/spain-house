@@ -1516,10 +1516,11 @@ body .invisible-heading {
 
 @media screen and (max-width: 767px) {
   .contacts__hero {
-    padding: 267px 0 359px 0;
+    padding: 317px 0 19px 0;
     margin-top: -80px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.6)), to(rgba(128, 128, 128, 0.6))), url(../img/contacts/contacts-hero--bg-mobile.png);
     background-image: linear-gradient(rgba(128, 128, 128, 0.6), rgba(128, 128, 128, 0.6)), url(../img/contacts/contacts-hero--bg-mobile.png);
+    max-width: 812px;
   }
 }
 
@@ -1537,6 +1538,8 @@ body .invisible-heading {
   .contacts__hero-subtitle {
     font-size: 13px;
     line-height: 1.9;
+    margin-top: 17px;
+    margin-bottom: 228px;
   }
 }
 
@@ -1654,8 +1657,31 @@ body .invisible-heading {
   }
 }
 
+.contacts__lang {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  color: #808080;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__lang {
+    text-align: center;
+    display: block;
+    margin-bottom: 33px;
+    font-size: 14px;
+  }
+}
+
 .contacts-help {
   padding-bottom: 97px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-help {
+    padding-bottom: 53px;
+  }
 }
 
 .contacts__help-box {
@@ -1674,7 +1700,7 @@ body .invisible-heading {
 
 @media screen and (max-width: 767px) {
   .contacts__help-content {
-    padding: 20px 25px;
+    padding: 20px 7px;
   }
 }
 
@@ -1698,7 +1724,7 @@ body .invisible-heading {
 .contacts__help-title--mobile {
   font-family: Playfair Display SC;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 27px;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
@@ -1750,6 +1776,8 @@ body .invisible-heading {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1279px) {
@@ -1816,6 +1844,16 @@ body .invisible-heading {
   }
 }
 
+.contacts__form {
+  padding: 0 94px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__form {
+    padding: 0 5px;
+  }
+}
+
 .contacts__input {
   font-family: Open Sans;
   border: 1px solid rgba(128, 128, 128, 0.5);
@@ -1823,7 +1861,7 @@ body .invisible-heading {
   outline: none;
   display: block;
   margin: 0 auto 13px auto;
-  width: 385px;
+  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 2;
@@ -1863,18 +1901,12 @@ body .invisible-heading {
   line-height: 2;
 }
 
-@media screen and (max-width: 767px) {
-  .contacts__input {
-    max-width: 267px;
-  }
-}
-
 .contacts__textarea {
   resize: none;
   outline: none;
   display: block;
   margin: 0 auto 12px auto;
-  width: 385px;
+  width: 100%;
   padding: 5px 20px;
   border: 1px solid rgba(128, 128, 128, 0.5);
   font-weight: 400;
@@ -1916,18 +1948,18 @@ body .invisible-heading {
   line-height: 2;
 }
 
-@media screen and (max-width: 767px) {
-  .contacts__textarea {
-    width: 267px;
-  }
-}
-
 .cost__checkbox-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.8;
   text-transform: capitalize;
   color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .cost__checkbox-text {
+    font-size: 9px;
+  }
 }
 
 .cost__checkbox-text .cost__contract-link {

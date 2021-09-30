@@ -13,13 +13,14 @@
     background-position-x: right;
   }
   @media screen and(max-width:767px) {
-    padding: 267px 0 359px 0;
+    padding: 317px 0 19px 0;
     margin-top: -80px;
     background-image: linear-gradient(
         rgba(128, 128, 128, 0.6),
         rgba(128, 128, 128, 0.6)
       ),
       url(../img/contacts/contacts-hero--bg-mobile.png);
+    max-width: 812px;
   }
 }
 .contacts__hero-subtitle {
@@ -34,6 +35,8 @@
   @media screen and(max-width:767px) {
     font-size: 13px;
     line-height: 1.9;
+    margin-top: 17px;
+    margin-bottom: 228px;
   }
 }
 .contacts__hero-text {
@@ -45,7 +48,7 @@
   margin-bottom: 5px;
 
   color: rgba(255, 255, 255, 0.8);
-  
+
   @media screen and(max-width:767px) {
     font-size: 12px;
     line-height: 2.5;

@@ -29,3 +29,18 @@
     font-size: 15px;
   }
 }
+.contacts__lang {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+
+  text-transform: uppercase;
+
+  color: #808080;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    display: block;
+    margin-bottom: 33px;
+    font-size: 14px;
+  }
+}
