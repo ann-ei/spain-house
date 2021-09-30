@@ -1,0 +1,23 @@
+.second-builds__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -46px;
+  margin-top: -46px;
+}
+.second-builds__item {
+  background: #fff;
+  box-shadow: (0px 5px 18px rgba(0, 0, 0, 0.3));
+  flex-basis: calc(100% / 3 - 46px);
+  margin-left: 46px;
+  margin-top: 46px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 1279px) {
+    flex-basis: calc(100% / 2 - 46px);
+  }
+  @media screen and (max-width: 767px) {
+    flex-basis: calc(100% / 1 - 46px);
+  }
+}
+.second-builds__cards {
+  padding: 85px 100px 110px 100px;
+}
