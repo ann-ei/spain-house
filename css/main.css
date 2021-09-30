@@ -2041,8 +2041,8 @@ body .invisible-heading {
 }
 
 .second-builds__hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.6)), to(rgba(128, 128, 128, 0.6))), url(../../../img/secondary-builds/secondary-build--bg.png);
-  background-image: linear-gradient(rgba(128, 128, 128, 0.6), rgba(128, 128, 128, 0.6)), url(../../../img/secondary-builds/secondary-build--bg.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.6)), to(rgba(128, 128, 128, 0.6))), url(../img/secondary-builds/secondary-build--bg.png);
+  background-image: linear-gradient(rgba(128, 128, 128, 0.6), rgba(128, 128, 128, 0.6)), url(../img/secondary-builds/secondary-build--bg.png);
   background-position-x: center;
   background-repeat: no-repeat;
   padding: 144px 0 168px 0;
@@ -2061,8 +2061,8 @@ body .invisible-heading {
     padding: 317px 0 19px 0;
     margin-top: -80px;
     max-width: 812px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.6)), to(rgba(128, 128, 128, 0.6))), url(../../../img/secondary-builds/secondary-build--bg--mobile.png);
-    background-image: linear-gradient(rgba(128, 128, 128, 0.6), rgba(128, 128, 128, 0.6)), url(../../../img/secondary-builds/secondary-build--bg--mobile.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.6)), to(rgba(128, 128, 128, 0.6))), url(../img/secondary-builds/secondary-build--bg--mobile.png);
+    background-image: linear-gradient(rgba(128, 128, 128, 0.6), rgba(128, 128, 128, 0.6)), url(../img/secondary-builds/secondary-build--bg--mobile.png);
   }
 }
 
@@ -2166,6 +2166,32 @@ body .invisible-heading {
 @media screen and (max-width: 767px) {
   .second-builds__cards {
     padding: 85px 15px 110px 15px;
+  }
+}
+
+.land__hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.6)), to(rgba(128, 128, 128, 0.6))), url(../img/land-plots/land-plots--bg.png);
+  background-image: linear-gradient(rgba(128, 128, 128, 0.6), rgba(128, 128, 128, 0.6)), url(../img/land-plots/land-plots--bg.png);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  padding: 144px 0 168px 0;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1279px) {
+  .land__hero {
+    padding: 131px 0 140px 0;
+    background-position-x: right;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .land__hero {
+    padding: 317px 0 19px 0;
+    margin-top: -80px;
+    max-width: 812px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.6)), to(rgba(128, 128, 128, 0.6))), url(../img/land-plots/land-plots--bg--mobile.png);
+    background-image: linear-gradient(rgba(128, 128, 128, 0.6), rgba(128, 128, 128, 0.6)), url(../img/land-plots/land-plots--bg--mobile.png);
   }
 }
 /*# sourceMappingURL=main.css.map */
