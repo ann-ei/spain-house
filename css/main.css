@@ -1672,6 +1672,12 @@ body .invisible-heading {
   padding: 41px 100px 49px 100px;
 }
 
+@media screen and (max-width: 767px) {
+  .contacts__help-content {
+    padding: 20px 25px;
+  }
+}
+
 .contacts__help-title {
   font-family: Playfair Display SC;
   font-weight: 700;
@@ -1683,6 +1689,29 @@ body .invisible-heading {
   margin-bottom: 26px;
 }
 
+@media screen and (max-width: 767px) {
+  .contacts__help-title {
+    display: none;
+  }
+}
+
+.contacts__help-title--mobile {
+  font-family: Playfair Display SC;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: #808080;
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__help-title--mobile {
+    display: none;
+  }
+}
+
 .contacts__help-text {
   font-weight: 400;
   font-size: 16px;
@@ -1690,6 +1719,27 @@ body .invisible-heading {
   text-align: center;
   margin-bottom: 22px;
   color: #808080;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__help-text {
+    display: none;
+  }
+}
+
+.contacts__help-text--mobile {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 4;
+  text-align: center;
+  margin-bottom: 17px;
+  color: #808080;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__help-text--mobile {
+    display: none;
+  }
 }
 
 .contacts__phone-list {
@@ -1813,6 +1863,12 @@ body .invisible-heading {
   line-height: 2;
 }
 
+@media screen and (max-width: 767px) {
+  .contacts__input {
+    max-width: 267px;
+  }
+}
+
 .contacts__textarea {
   resize: none;
   outline: none;
@@ -1858,6 +1914,12 @@ body .invisible-heading {
   font-weight: 400;
   font-size: 14px;
   line-height: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__textarea {
+    width: 267px;
+  }
 }
 
 .cost__checkbox-text {
@@ -1936,7 +1998,7 @@ body .invisible-heading {
 
 @media screen and (max-width: 767px) {
   .contacts__btn {
-    padding: 12px 19px;
+    padding: 9px 35px;
     font-size: 17px;
   }
 }
