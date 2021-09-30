@@ -1,0 +1,167 @@
+.contacts-help {
+  padding-bottom: 97px;
+}
+.contacts__help-box {
+  max-width: 845px;
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.3);
+  display: flow-root;
+  margin: 0 auto;
+}
+.contacts__help-content {
+  border: 1px solid #808080;
+  margin: 10px;
+  padding: 41px 100px 49px 100px;
+}
+.contacts__help-title {
+  font-family: Playfair Display SC;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 0.8;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #808080;
+  margin-bottom: 26px;
+}
+.contacts__help-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 22px;
+
+  color: #808080;
+}
+.contacts__phone-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.contacts__phone-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  color: #808080;
+  margin: 0 6px;
+}
+.contacts__input {
+  font-family: Open Sans;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  padding: 5px 20px;
+  outline: none;
+  display: block;
+  margin: 0 auto 13px auto;
+  width: 385px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  transition: 250ms border linear;
+
+  &:focus-within {
+    border: 1px solid #808080;
+  }
+
+  &::placeholder {
+    color: rgba(128, 128, 128, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+.contacts__textarea {
+  resize: none;
+  outline: none;
+  display: block;
+  margin: 0 auto 12px auto;
+  width: 385px;
+  padding: 5px 20px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  transition: 250ms border linear;
+
+  &:focus-within {
+    border: 1px solid #808080;
+  }
+  &::placeholder {
+    color: rgba(128, 128, 128, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
+//chekbox
+.cost__checkbox-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.8;
+  text-transform: capitalize;
+
+  color: #000000;
+  .cost__contract-link {
+    text-decoration: underline;
+    color: #000000;
+  }
+}
+.cost__checkbox-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.cost__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.cost__chekbox-icon {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #808080;
+  margin-right: 10px;
+  transition: 250ms transform linear;
+}
+.cost__checkbox:checked + .cost__chekbox-icon {
+  background-color: transparent;
+  background-image: url(../img/contacts/checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+  transform: scale(1.1);
+}
+.contacts__btn {
+  font-family: Playfair Display SC;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 14px 69px;
+
+  color: #ffffff;
+  background: #808080;
+  border: 2px solid #808080;
+
+  display: block;
+  margin: 0 auto;
+
+  transition: 250ms all linear;
+  @media screen and (max-width: 767px) {
+    padding: 12px 19px;
+    font-size: 17px;
+  }
+  &:hover {
+    background: transparent;
+    color: #808080;
+  }
+}
