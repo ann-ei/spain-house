@@ -20,4 +20,11 @@
 }
 .second-builds__cards {
   padding: 85px 100px 110px 100px;
+  @media screen and (max-width: 1279px) {
+    padding: 85px 50px 110px 50px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 85px 15px 110px 15px;
+  }
 }
