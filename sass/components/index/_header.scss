@@ -179,8 +179,7 @@
 .mobile-menu__navigation li {
   border-top: 1px solid #ccc;
   padding: 13px 127px 13px 0;
-  display: inline-flex;
-  align-items: center;
+  display: block;
   &:last-child {
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
@@ -204,4 +203,37 @@
   li {
     margin-bottom: 15px;
   }
+}
+
+// accordion
+.accordion {
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }

@@ -18,9 +18,8 @@
         <div class="container header-container">
     <!-- _____________логотип__________ -->
             <div class="header__logo">
-                <a href="index.html">
-                    <img class="logo-desktop" src="../img/logo.png" alt="">
-                    <img class="logo-mobile" src="../img/logo-white.png" alt="">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="">
                 </a>
             </div>
             <div class="header__content">
@@ -75,9 +74,6 @@
           >
             <use href="../img/sprite.svg#icon-menu-black"></use>
           </svg>
-
-          
-
         </button>
     </div>
      <div class="menu-container js-menu-container" id="mobile-menu">
@@ -98,10 +94,25 @@ Spain House</h2>
               <a href="../index.html">Главная</a>
             </li>
             <li>
-              <a href="./new-builds.html">новостройки</a>
-              <svg width="8" height="8">
-            <use href="../img/sprite.svg#icon-plus"></use>
-          </svg>
+              
+              <button class="accordion"><a href="../pages/new-builds.html">новостройки</a></button>
+<div class="panel">
+  <ul>
+      <li><a href="./distric.html">marbella</a></li>
+      <li><a href="./distric.html">Estepona</a></li>
+      <li><a href="./distric.html">new golden mile</a></li>
+      <li><a href="./distric.html">casares</a></li>
+      <li><a href="./distric.html">manilva</a></li>
+      <li><a href="./distric.html">Benahavis</a></li>
+      <li><a href="./distric.html">Mijas Kosta</a></li>
+      <li><a href="./distric.html">Fuengirola</a></li>
+      <li><a href="./distric.html">Benalmadena</a></li>
+      <li><a href="./distric.html">Torremolinos</a></li>
+      <li><a href="./distric.html">Malaga</a></li>
+      <li><a href="./distric.html">Sotogrande</a></li>
+  </ul>
+</div>
+              
             </li>
             <li>
               <a href="./secondary-builds.html">вторичная недвижимость</a>
@@ -163,9 +174,45 @@ Spain House</h2>
             </div>
         </section>
 
-        <section class="second-builds__filter"></section>
+        <section class="second-builds__filter">
+            <div class="container second-filter-container">
+            <form action="">
+                <input type="text" class="second-builds__input" placeholder="Артикул">
+                
+
+                <select name="" id="" class="second-builds__select">
+                    <option value="">Район</option>
+                    <option value="">marbella</option>
+                    <option value="">Estepona</option>
+                    <option value="">new golden mile</option>
+                    <option value="">casares</option>
+                    <option value="">manilva</option>
+                    <option value="">Benahavis</option>
+                    <option value="">Mijas Kosta</option>
+                    <option value="">Fuengirola</option>
+                    <option value="">Benalmadena</option>
+                    <option value="">Torremolinos</option>
+                    <option value="">Malaga</option>
+                    <option value="">Sotogrande</option>
+                </select>
+
+                <select name="" id="" class="second-builds__select">
+                    <option value="">Тип недвижимости</option>
+                    <option value="">Все типы</option>
+                    <option value="">Квартира</option>
+                    <option value="">Таунхаус</option>
+                    <option value="">Дом</option>
+                </select>
+                
+    
+    
+                <button class="second-builds__btn">поиск</button>
+            </form>
+            </div>
+        </section>
 
         <section class="second-builds__cards">
+            <div class="container">
             <ul class="second-builds__list">
             <li class="second-builds__item">
                             <div class="recommend__items--little__img">
@@ -465,6 +512,7 @@ Spain House</h2>
                         </li>
 
                         </ul>
+                        </div>
         </section>
     </main>
 
@@ -492,6 +540,12 @@ Spain House</h2>
             <p class="footer__copyright">&#169; Все права защищены. Агентство недвижимости Spain House </p>
         </div>
     </footer>
+
+    <!-- скрипт select -->
+<script src="../js/select.js"></script>
+    <!-- скрипт accordion -->
+
+    <script src="../js/accordion.js"></script>
 <!-- скрипт мобильного меню -->
     <script
       defer

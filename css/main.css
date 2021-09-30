@@ -572,12 +572,7 @@ body .invisible-heading {
 .mobile-menu__navigation li {
   border-top: 1px solid #ccc;
   padding: 13px 127px 13px 0;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
 }
 
 .mobile-menu__navigation li:last-child {
@@ -605,6 +600,44 @@ body .invisible-heading {
 
 .header__phone-list--mobile li {
   margin-bottom: 15px;
+}
+
+.accordion {
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 
 .hero {
@@ -2115,6 +2148,40 @@ body .invisible-heading {
     display: block;
     margin: 0 auto;
   }
+}
+
+.second-filter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.second-builds__input {
+  padding: 13px 20px 13px 57px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  outline: none;
+}
+
+.second-builds__select {
+  padding: 13px 120px 13px 29px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  outline: none;
+}
+
+.second-builds__btn {
+  font-family: Playfair Display SC;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #808080;
+  padding: 10px 30px;
 }
 
 .second-builds__list {

@@ -1,0 +1,28 @@
+.second-filter-container {
+  display: flex;
+  justify-content: center;
+}
+.second-builds__input {
+  padding: 13px 20px 13px 57px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  outline: none;
+}
+.second-builds__select {
+  padding: 13px 120px 13px 29px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  outline: none;
+}
+.second-builds__btn {
+  font-family: Playfair Display SC;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background: #808080;
+
+  padding: 10px 30px;
+}

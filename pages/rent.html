@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Вторичная недвижимость</title>
+    <title>Аренда</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,9 +18,8 @@
         <div class="container header-container">
     <!-- _____________логотип__________ -->
             <div class="header__logo">
-                <a href="index.html">
-                    <img class="logo-desktop" src="../img/logo.png" alt="">
-                    <img class="logo-mobile" src="../img/logo-white.png" alt="">
+                <a href="../index.html">
+                    <img src="../img/logo.png" alt="">
                 </a>
             </div>
             <div class="header__content">
@@ -75,9 +74,6 @@
           >
             <use href="../img/sprite.svg#icon-menu-black"></use>
           </svg>
-
-          
-
         </button>
     </div>
      <div class="menu-container js-menu-container" id="mobile-menu">
@@ -98,22 +94,37 @@ Spain House</h2>
               <a href="../index.html">Главная</a>
             </li>
             <li>
-              <a href="./new-builds.html">новостройки</a>
-              <svg width="8" height="8">
-            <use href="../img/sprite.svg#icon-plus"></use>
-          </svg>
+              
+              <button class="accordion"><a href="../pages/new-builds.html">новостройки</a></button>
+<div class="panel">
+  <ul>
+      <li><a href="./distric.html">marbella</a></li>
+      <li><a href="./distric.html">Estepona</a></li>
+      <li><a href="./distric.html">new golden mile</a></li>
+      <li><a href="./distric.html">casares</a></li>
+      <li><a href="./distric.html">manilva</a></li>
+      <li><a href="./distric.html">Benahavis</a></li>
+      <li><a href="./distric.html">Mijas Kosta</a></li>
+      <li><a href="./distric.html">Fuengirola</a></li>
+      <li><a href="./distric.html">Benalmadena</a></li>
+      <li><a href="./distric.html">Torremolinos</a></li>
+      <li><a href="./distric.html">Malaga</a></li>
+      <li><a href="./distric.html">Sotogrande</a></li>
+  </ul>
+</div>
+              
             </li>
             <li>
               <a href="./secondary-builds.html">вторичная недвижимость</a>
             </li>
             <li>
-              <a href="#">аренда</a>
+              <a href="./rent.html">аренда</a>
             </li>
             <li>
               <a href="./land-plots.html">земельные участки</a>
             </li>
             <li>
-              <a href="#">контакты</a>
+              <a href="./contacts.html">контакты</a>
             </li>
           </ul>
 
@@ -492,6 +503,10 @@ Spain House</h2>
             <p class="footer__copyright">&#169; Все права защищены. Агентство недвижимости Spain House </p>
         </div>
     </footer>
+
+    <!-- скрипт accordion -->
+
+    <script src="../js/accordion.js"></script>
 <!-- скрипт мобильного меню -->
     <script
       defer
